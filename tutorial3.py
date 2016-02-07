@@ -14,5 +14,5 @@ noline = LineStyle(0, black)
 bg_asset = RectangleAsset(SCREEN_WIDTH, SCREEN_HEIGHT, noline, green)
 bg = Sprite(bg_asset, (0,0))
 
-myapp = App()
+myapp = App(SCREEN_WIDTH, SCREEN_HEIGHT)
 myapp.run()
