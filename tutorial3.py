@@ -48,4 +48,8 @@ def mouseClick(event):
     ball.y = event.y
 
 myapp = App(SCREEN_WIDTH, SCREEN_HEIGHT)
+# Set up event handlers for the app
+myapp.listenKeyEvent('keydown', 'space', spaceKey)
+myapp.listenKeyEvent('keydown', 'r', reverseKey)
+myapp.listenMouseEvent('click', mouseClick)
 myapp.run(step)
