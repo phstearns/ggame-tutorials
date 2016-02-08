@@ -34,5 +34,18 @@ def step():
             ball.x -= ball.dir
             reverse(ball)
 
+# Handle the space key
+def spaceKey(event):
+    ball.go = not ball.go
+
+# Handle the "reverse" key
+def reverseKey(event):
+    reverse(ball)
+
+# Handle the mouse click
+def mouseClick(event):
+    ball.x = event.x
+    ball.y = event.y
+
 myapp = App(SCREEN_WIDTH, SCREEN_HEIGHT)
 myapp.run(step)
